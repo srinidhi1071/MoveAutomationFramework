@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.move.androidapp.report.MyExtentListners"/>
+  </listeners>
+  <test thread-count="1" name="Regression_test(failed)">
+    <classes>
+      <class name="com.move.androidapp.scripts.MV_003_DirectionListValidation">
+        <methods>
+          <include name="tc_003_testGuestSearchDirection"/>
+          <include name="before_suite"/>
+          <include name="reset"/>
+          <include name="_LaunchApp"/>
+          <include name="OracleCloseConnection"/>
+        </methods>
+      </class> <!-- com.move.androidapp.scripts.MV_003_DirectionListValidation -->
+    </classes>
+  </test> <!-- Regression_test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

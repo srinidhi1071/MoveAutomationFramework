@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Suite">
+	<listeners>
+		<listener class-name="com.move.androidapp.report.MyExtentListners" />
+	</listeners>
+	<test thread-count="1" name="Regression_test">
+		<classes>
+			<class name="com.move.androidapp.scripts.MV_001_GuestUserSearchAddress"></class>
+			<class name="com.move.androidapp.scripts.MV_002_NavigateToPlace"></class>
+			<class name="com.move.androidapp.scripts.MV_003_DirectionListValidation"></class>
+		</classes>
+	</test> <!-- Regression_test -->
+</suite> <!-- Suite -->
